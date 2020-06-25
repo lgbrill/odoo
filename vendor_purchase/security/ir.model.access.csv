@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_order,purchase.order vendor,purchase.model_purchase_order,vendor_purchase.group_vendor_user,1,1,0,0
+access_purchase_order_line,purchase.order.line vendor,purchase.model_purchase_order_line,vendor_purchase.group_vendor_user,1,1,1,0
+access_account_move_line,account.move.line vendor,account.model_account_move_line,vendor_purchase.group_vendor_user,1,1,1,0
+access_product_template,product.template vendor,product.model_product_template,vendor_purchase.group_vendor_user,0,1,0,0
+access_product_product,product.product vendor,product.model_product_product,vendor_purchase.group_vendor_user,0,1,0,0
