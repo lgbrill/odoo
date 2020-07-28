@@ -22,7 +22,7 @@
     'data': [
         'security/vendor_security.xml',
         'security/ir.model.access.csv',
-        # 'views/purchase_views.xml',
+        'views/purchase_views.xml',
         'views/product_views.xml',
     ],
     # only loaded in demonstration mode
