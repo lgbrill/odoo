@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="0">
-        <record model="ir.ui.menu" id="purchase.menu_purchase_root">
-            <field name="groups_id" eval="[(4, ref('base.group_user'))]" />
-        </record>
-
         <record model="ir.module.category" id="module_category_vendor_user">
             <field name="name">Vendor</field>
             <field name="description">Vendor user group for internal users</field>
-            <field name="sequence">8</field>
+            <field name="sequence">18</field>
             <field name="visible">True</field>
         </record>
 
         <record id="group_vendor_user" model="res.groups">
             <field name="name">User</field>
-            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
             <field name="category_id" ref="vendor_purchase.module_category_vendor_user"/>
         </record>
 
@@ -50,5 +45,11 @@
             <field name="perm_read" eval="1"/>
             <field name="perm_create" eval="0"/>
         </record>
+
+        <menuitem id="purchase.menu_procurement_management_supplier_name" name="Vendors" 
+            parent="purchase.menu_procurement_management"
+            groups="purchase.group_purchase_manager,purchase.group_purchase_user"
+            action="account.res_partner_action_supplier" sequence="15"/>
+
     </data>
 </odoo>
