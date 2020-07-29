@@ -16,7 +16,7 @@
     'license': 'OEEL-1',
 
     # any module necessary for this one to work correctly
-    'depends': ['purchase', 'stock'],
+    'depends': ['purchase', 'stock', 'contacts'],
 
     # always loaded
     'data': [
