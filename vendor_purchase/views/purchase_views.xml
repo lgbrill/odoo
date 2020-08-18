@@ -17,6 +17,20 @@
             <xpath expr="//field[@name='partner_id']" position="after">
                 <field name="is_vendor" invisible="1"/>
             </xpath>
+
+            <xpath expr="//div[@class='oe_chatter']" position="replace">
+                <div class="oe_chatter">
+                    <!-- <field name="message_follower_ids" widget="mail_followers" attrs="{'invisible': [('is_vendor', '=', True)]}"/> -->
+                    <field name="message_follower_ids" widget="mail_followers" groups="purchase.group_purchase_manager"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </xpath>
+            
+            <!-- <xpath expr="//field[@name='message_follower_ids']" position="attributes">
+                <attribute name="attrs">{'invisible': [('is_vendor', '=', True)]}</attribute>
+            </xpath> -->
+
         </field>
     </record>
 </odoo>
