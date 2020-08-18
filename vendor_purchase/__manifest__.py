@@ -25,7 +25,5 @@
         'views/purchase_views.xml',
         'views/product_views.xml',
     ],
-    # only loaded in demonstration mode
-    'demo': [],
     'application': False,
 }
