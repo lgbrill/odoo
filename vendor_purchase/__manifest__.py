@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     'name': "Vendor User Group",
 
@@ -12,7 +11,7 @@
     'website': 'https://www.odoo.com/',
 
     'category': 'Custom Development',
-    'version': '1.0',
+    'version': '1.1.0',
     'license': 'OEEL-1',
 
     # any module necessary for this one to work correctly
