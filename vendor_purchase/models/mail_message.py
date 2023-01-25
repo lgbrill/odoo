@@ -11,7 +11,7 @@ class MailMessage(models.Model):
             if values_list[0].get('subtype_id') == 2:
                 res = super(MailMessage, self.with_user(user=self.env.user).sudo()).create(values_list)
             else:
-                raise UserError(_("Unable to post message"))
+                res = super(MailMessage, self).create(values_list)
         else:
             res = super(MailMessage, self).create(values_list)
         return res
